@@ -1,0 +1,451 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.navBar {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 7%
+}
+
+.navBar a, #contact {
+    float: left;
+    color: #00217D;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1%;
+    cursor: pointer;
+    font-weight: 100;
+}
+
+#contact:hover, .navBar a.selected, .navBar a:hover {
+    color: #000;
+}
+
+.line {
+    width: 20%;
+}
+
+footer, footer p {
+    background-color: #00217D;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    height: 100%;
+    padding: 5px;
+    margin: 0;
+    text-decoration: none;
+}
+
+footer a {
+    padding: 0;
+    margin: 0;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia img {
+    height: 30px;
+    margin: 15px;
+}
+
+.socialMedia img:hover {
+    opacity: .3;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    color: #00217D;
+    text-align: center;
+}
+
+.item {
+    width: 50%;
+    background: #fff;
+    height: 100vh;
+}
+
+.item h1, h2, h3 {
+    color: #00217D;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.item h1 {
+    font-size: 40px;
+}
+
+.item h2 {
+    font-size: 35px;
+}
+
+.item p {
+    color: #000;
+    line-height: 1.8;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+.button {
+    background-color: white;
+    border: 3px solid #00217D;
+    color: #00217D;
+    padding: 15px 60px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #00217D;
+    border: 3px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.left {
+    margin-left: 5%
+}
+
+.right {
+    margin-right: 5%;
+}
+
+.boxLeft {
+    margin-top: 5%;
+    margin-right: 2.5%;
+    height: 50vh;
+}
+
+.boxRight {
+    margin-top: 5%;
+    margin-left: 2.5%;
+    height: 50vh;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.leftAlign {
+    text-align: left;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textBox {
+    margin: 0% 12%;
+}
+
+.rise-10 {
+    padding-bottom: 10%;
+}
+
+.picDec {
+    background-image: linear-gradient(to top, #00217D 0%, #00217D 80%, #00217D 80%, white 80%, white 100%);
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+
+.rise-5 {
+    margin-bottom: 5%;
+}
+
+.hours p {
+    font-size: 25px;
+}
+
+.hours a {
+    color: #00217D;
+}
+
+.hours a:hover {
+    text-decoration: underline;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000;
+}
+
+.overlayText {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1.6;
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image {
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image:hover .overlay {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.topPic {
+    background-image: url('../images/cover.jpg');
+}
+
+.nextPic {
+    background-image: url('../images/next.jpg');
+}
+
+.teaPic {
+    background-image: url('../images/tea.jpg');
+}
+
+.coffeePic {
+    background-image: url('../images/coffee.jpg');
+}
+
+.potPic {
+    background-image: url('../images/pot.jpg');
+}
+
+.mailingList {
+    background-color: #00217D;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    margin: 5%;
+    padding: 2%
+}
+
+.mailingList h1 {
+    font-family: 'Libre Baskerville', serif;
+    color: #fff;
+}
+
+.contact {
+    height: auto;
+    text-align: center;
+    color: #00217D;
+    margin: 5%;
+    margin-top: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.contact table {
+    color: #000;
+    line-height: 1.8;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+#map {
+    height: 40vh;
+    margin: 5%;
+}
+
+.shopModal {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+input[type=text], input[type=email], input[type=number] {
+    width: 25%;
+    padding: 8px 20px;
+    margin: 12px 30px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background-color: #00217D;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label {
+    margin: 12px;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.masthead {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    color: #00217D;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.masthead h2, h3, h4, h5, h6, p {
+    color: #000;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.masthead p {
+    padding: 0% 20%;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.7;
+}
+
+.logo {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.bio {
+    position: relative;
+    background-color: #00217D;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 0;
+    padding: 2%;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bioPic {
+    position: relative;
+    width: 40%;
+    height: auto;
+}
+
+.border {
+    position: relative;
+    margin-top: 2vh;
+    width: auto;
+    height: auto;
+    border: 7vw solid #00217D;
+    border-bottom: None;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Libre Baskerville', serif;
+    color: #00217D;
+}
+
+.border h3, h4, h5, h6, p, a {
+    color: #000;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+.border a:hover {
+    color: #00217D;
+    text-decoration: underline;
+}
+
+.product {
+    width: 33.3333%;
+    background: #fff;
+    height: auto;
+    padding: 0% 5%;
+    line-height: 1.8;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.exploreImage {
+    width: 33.333%;
+    height: 50vh;
+    margin: 2%;
+}
+
+.product a, h3 {
+    color: #000;
+}
+
+.product h3:hover {
+    color: #00217D;
+    text-decoration: underline;
+}
+
+.modalContainer {
+    width: 50%;
+    margin: 3%;
+    padding: 2%;
+    height: auto;
+}
+
+.modalContainer img {
+    object-fit: contain;
+}
+
+.modalButton {
+    background-color: #00217D;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.modalButton:hover {
+    background-color: #fff;
+    color: #00217D;
+    border: 3px solid #00217D;
+    cursor: pointer;
+    transition: .5s ease;
+}

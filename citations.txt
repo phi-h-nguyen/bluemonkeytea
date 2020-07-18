@@ -1,0 +1,30 @@
+Images:
+https://www.pexels.com/photo/white-ceramic-cup-641038/
+https://www.pexels.com/photo/close-up-of-coffee-cup-on-table-312418/
+https://www.pexels.com/photo/christmas-cinnamon-cup-decoration-259955/
+https://www.pexels.com/photo/photo-of-person-pouring-hot-beverage-on-mug-3619784/
+https://www.facebook.com/photo/?fbid=10156612020210793&set=a.10151389745765793
+https://www.pittsburghcuppa.com/nesaev.html
+https://www.pittsburghcuppa.com/frtealosetca.html
+https://www.pittsburghcuppa.com/vawake1eltec.html
+https://www.pittsburghcuppa.com/coreno.html
+https://s.yimg.com/aah/yhst-74137330623299/blue-monkey-tea-loose-leaf-menu-1.gif
+https://www.flaticon.com/free-icon/facebook-circular-logo_20673
+https://www.iconfinder.com/icons/1161953/instagram_new_icon
+https://www.iconfinder.com/icons/103176/email_mail_icon
+
+JQuery Modal:
+https://jquerymodal.com/
+
+Google Maps API and Styling:
+https://developers.google.com/maps
+https://mapstyle.withgoogle.com/
+
+Highcharts:
+http://code.highcharts.com
+
+Content:
+https://www.pittsburghcuppa.com/bluemonkeytea.html
+
+Fonts:
+https://fonts.google.com/

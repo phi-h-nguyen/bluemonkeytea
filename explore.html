@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Blue Monkey Tea: Created by Phi Henry Nguyen-->
+    <meta name="author" content="Phi Henry Nguyen">
+    <meta name="keywords" content="Blue Monkey Tea Pittsburgh">
+    <meta name="decription" content="Blue Monkey Tea Pittsburgh Official Website">
+
+    <!--IMAGE AND LIBRARY CITATIONS:
+        file: citations.txt
+    -->
+
+    <title>Explore</title>
+
+    <!--External links to CSS files-->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/modal.css">
+
+
+    <!--External Link to Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300&family=Titillium+Web:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!--External Links to Modal JS files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <!--External Link to JS File-->
+    <script src="js/scripts.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <!--Product Modals, one for each type-->
+    <div id="teaModal" class="modal">
+        <div class="row">
+            <div class="modalContainer content">
+                <img src="images/teaProduct.jfif" alt="Tea Product">
+            </div>
+            <div class="modalContainer content">
+                <h3>Fruit Tea Lover Set</h3>
+                <p>
+                    Enjoy this wonderful fruit tea assortment! Each sample will make
+                    approximately 10-12 mugs of tea.
+                </p>
+                <h5>$22.50</h5>
+                <a href="#" rel="modal:close">
+                    <button class="modalButton">Add to Cart</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="coffeeModal" class="modal">
+        <div class="row">
+            <div class="modalContainer content">
+                <img src="images/coffeeProduct.jfif" alt="Coffee Product">
+            </div>
+            <div class="modalContainer content">
+                <h3>Columbian Supremo</h3>
+                <p>
+                    Best seller, 1 pound of whole bean. Pleasant, medium bodied, smooth coffee. Medium Roast, Robust
+                    light body.
+                </p>
+                <h5>$12.50</h5>
+                <a href="#" rel="modal:close">
+                    <button class="modalButton">Add to Cart</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="potModal" class="modal">
+        <div class="row">
+            <div class="modalContainer content">
+                <img src="images/potProduct.jfif" alt="Kettle Product">
+            </div>
+            <div class="modalContainer content">
+                <h3>VarieTEA Kettle</h3>
+                <p>
+                    Advanced kettle with precise settings for all tea varieties to achieve a perfect temperature for
+                    any tea.
+                </p>
+                <h5>$99.99</h5>
+                <a href="#" rel="modal:close">
+                    <button class="modalButton">Add to Cart</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation Bar, fixed-->
+    <header>
+        <nav class="navBar">
+            <a href="index.html"> HOME </a>
+            <a href="story.html"> OUR STORY </a>
+            <a href="#" class="selected"> EXPLORE </a>
+            <a href="events.html"> EVENTS </a>
+            <a href="index.html"> CONTACT </a>
+        </nav>
+    </header>
+
+    <br>
+
+    <!--Products surrounded by solid blue border-->
+    <div class="border">
+        <div class="centerAlign">
+            <br>
+            <h1>Explore Our Products</h1>
+            <!--External link to menu image-->
+            <a href="images/Menu.gif" target="_blank">
+                <h3>See our entire Menu</h3>
+            </a>
+            <hr class="line">
+        </div>
+
+        <!--Product images with overlay and navigation links to scroll to each section-->
+        <div class="row">
+            <div class="teaPic exploreImage image" onclick="scrollTea()">
+                <span role="img" aria-label="Tea product image"></span>
+                <div class="overlay">
+                    <div class="overlayText">Loose Leaf Teas</div>
+                </div>
+            </div>
+            <div class="coffeePic exploreImage image" onclick="scrollCoffee()">
+                <span role="img" aria-label="Coffee product image"></span>
+                <div class="overlay">
+                    <div class="overlayText">Gourmet Coffee</div>
+                </div>
+            </div>
+            <div class="potPic exploreImage image" onclick="scrollAcc()">
+                <span role="img" aria-label="Coffee product image"></span>
+                <div class="overlay">
+                    <div class="overlayText">Tea & Coffee Accessories</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Tea Products-->
+        <div class="centerAlign" id="teaProducts">
+            <br>
+            <h2>Loose Leaf Teas</h2>
+            <hr class="line">
+        </div>
+
+        <div class="row">
+            <!--Each product linked to a modal pop up-->
+            <div class="product content">
+                <a href="#teaModal" rel="modal:open">
+                    <h3>Fruit Tea Lover Set</h3>
+                </a>
+                <p>
+                    Enjoy this wonderful fruit tea assortment! Each sample will make
+                    approximately 10-12 mugs of tea.
+                </p>
+                <h5>$22.50</h5>
+
+            </div>
+            <div class="product content">
+                <a href="#teaModal" rel="modal:open">
+                    <h3>Chai Tea Lover Set</h3>
+                </a>
+                <p>
+                    Enjoy this wonderful chai tea assortment! Each sample will make
+                    approximately 10-12 mugs of tea.
+                </p>
+                <h5>$22.50</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#teaModal" rel="modal:open">
+                    <h3>Green Tea Lover Set</h3>
+                </a>
+                <p>
+                    Enjoy this wonderful green tea assortment! Each sample will make
+                    approximately 10-12 mugs of tea.
+                </p>
+                <h5>$22.50</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="product content">
+                <a href="#teaModal" rel="modal:open">
+                    <h3>Organic Columbian Tea</h3>
+                </a>
+                <p>
+                    Organic Black Tea grown above 6000 feet, atop the Andes mountains.
+                    This 4oz pack makes 25 mugs of tea
+                </p>
+                <h5>$8.99</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#teaModal" rel="modal:open">
+                    <h3>Organic Taishan Tea</h3>
+                </a>
+                <p>
+                    Chinese Matcha, cultivated organically from the Province Zhejiang.
+                    This 4ox pack makes 20 mugs of tea
+                </p>
+                <h5>$31.96</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#teaModal" rel="modal:open">
+                    <h3>Green Yerba Mate</h3>
+                </a>
+                <p>
+                    Yerba Mate from Brazil with a unique type of caffeine perfect to energize. This 4oz
+                    pack makes 25 mugs of tea.
+                </p>
+                <h5>$22.50</h5>
+            </div>
+        </div>
+
+        <!--Coffee Products-->
+        <div class="centerAlign" id="teaAnchor">
+            <br>
+            <h2>Gourmet Coffee</h2>
+            <hr class="line">
+        </div>
+
+        <div class="row">
+            <div class="product content">
+                <a href="#coffeeModal" rel="modal:open">
+                    <h3>Columbian Supremo</h3>
+                </a>
+                <p>
+                    Best seller, 1 pound of whole bean. Pleasant, medium bodied, smooth coffee. Medium Roast, Robust
+                    body.
+                </p>
+                <h5>$12.99</h5>
+            </div>
+            <div class="product content">
+                <a href="#coffeeModal" rel="modal:open">
+                    <h3>Espresso Roast</h3>
+                </a>
+                <p>
+                    1 pound of whole bean. Can be used in Espresso or any other coffee maker. Dark roast, full deep
+                    body, heavy aroma.
+                </p>
+                <h5>$13.50</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#coffeeModal" rel="modal:open">
+                    <h3>Rocket Fuel Extra Caffiee</h3>
+                </a>
+                <p>
+                    1 pound of whole bean. Dark Rocket Fuel Coffee with extra caffeine. Dark Roast, Robust full
+                    body.
+                </p>
+                <h5>$22.50</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="product content">
+                <a href="#coffeeModal" rel="modal:open">
+                    <h3>Hazelnut Supreme</h3>
+                </a>
+                <p>
+                    1 pound of whole bean. Flavorful Hazelenut traces. Great for the morning. Light Roast, Robust
+                    full body.
+                </p>
+                <h5>$8.99</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#coffeeModal" rel="modal:open">
+                    <h3>Pumpkin Spice</h3>
+                </a>
+                <p>
+                    1 pound of whole bean. Flavorful Pumpkin Spice traces. Great for the fall. Light Roast, Robust
+                    full body.
+                </p>
+                <h5>$31.96</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#coffeeModal" rel="modal:open">
+                    <h3>Irish Cream</h3>
+                </a>
+                <p>
+                    1 pound of whole bean. Flavorful Irish Cream flavor. Great for the winter. Light Roast, Robust
+                    deep body.
+                </p>
+                <h5>$22.50</h5>
+            </div>
+        </div>
+
+        <!--Accessories Products-->
+        <div class="centerAlign" id="coffeeAnchor">
+            <br>
+            <h2>Tea & Coffee Accessories</h2>
+            <hr class="line">
+        </div>
+
+        <div class="row" id="accAnchor">
+            <div class="product content">
+                <a href="#potModal" rel="modal:open">
+                    <h3>VarieTEA Kettle</h3>
+                </a>
+                <p>
+                    Advanced kettle with precise settings for all tea varieties to achieve a perfect temperature for
+                    any tea.
+                </p>
+                <h5>$99.99</h5>
+            </div>
+            <div class="product content">
+                <a href="#potModal" rel="modal:open">
+                    <h3>French Press Coffee Maker</h3>
+                </a>
+                <p>
+                    French Press is one of the best coffee makers! Rich coffee is ready in under 4 minutes.
+                </p>
+                <h5>$13.50</h5>
+            </div>
+
+            <div class="product content">
+                <a href="#potModal" rel="modal:open">
+                    <h3>IngenuiTEA Maker</h3>
+                </a>
+                <p>
+                    A great addition for your Tea-Making needs! 24oz to make up to 6 cups at once. Adds a light
+                    flavor.
+                </p>
+                <h5>$22.50</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer with External Social Media and Email Links-->
+    <footer>
+        <div class="socialMedia centerAlign">
+            <a href="https://www.facebook.com/TeaPittsburgh/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook Icon">
+            </a>
+            <a href="https://www.instagram.com/bluemonkeyteacarnegie/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram Icon">
+            </a>
+            <a href="mailto:100teacups@gmail.com">
+                <img src="images/mail.svg" alt="Email Icon">
+            </a>
+        </div>
+        <a href="https://github.com/phi-h-nguyen" target="_blank">
+            <p>&copy; Phi Henry Nguyen</p>
+        </a>
+    </footer>
+
+</body>
